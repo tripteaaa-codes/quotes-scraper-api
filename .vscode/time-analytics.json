@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "project": {
+    "totalFocusTime": 5403523,
+    "totalActiveTime": 748361
+  },
+  "files": {
+    "index.js": {
+      "pending": 571072,
+      "focus": 2080196
+    },
+    "server.js": {
+      "pending": 161377,
+      "focus": 442866
+    },
+    "package.json": {
+      "pending": 15912,
+      "focus": 38190
+    }
+  }
+}
