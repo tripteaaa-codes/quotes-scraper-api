@@ -2,39 +2,46 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 
-async function scrapeQuotes() {
-    try {
-        const { data } = await axios.get('https://quotes.toscrape.com');
+async function scrapePage(url) {
+    const { data } = await axios.get(url);
 
-        const $ = cheerio.load(data);
+    const $ = cheerio.load(data);
 
-        const quotes = [];
+    const quotes = [];
 
-        $('.quote').each((i, el) => {
-            const quote = $(el).find('.text').text();
-            const author = $(el).find('.author').text();
-
-            quotes.push({
-                id: i + 1,
-                quote,
-                author
-            });
+    $('.quote').each((i, el) => {
+        quotes.push({
+            quote: $(el).find('.text').text(),
+            author: $(el).find('.author').text()
         });
+    });
 
-        fs.writeFileSync(
-            "quotes.json", 
-            JSON.stringify(quotes, null, 2),
-            'utf-8'
-        );
-
-        console.log('Quotes saved to quotes.json');
-
-    } catch (error) {
-        console.log('Error:', error.message);
-    }
+    return quotes;
 }
 
-scrapeQuotes();
+async function scrapeAllPages() {
+    let allQuotes = [];
+
+    for (let page = 1; page <= 3; page++) {
+        const url = `https://quotes.toscrape.com/page/${page}/`;
+
+        console.log(`Scraping page ${page}...`);
+
+        const quotes = await scrapePage(url);
+
+        allQuotes = allQuotes.concat(quotes);
+    }
+
+    fs.writeFileSync(
+        "quotes.json",
+        JSON.stringify(allQuotes, null, 2),
+        'utf-8'
+    );
+
+    console.log(`Saved ${allQuotes.length} quotes`);
+}
+
+scrapeAllPages();
 
 // const axios = require('axios');
 // const cheerio = require('cheerio');

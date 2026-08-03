@@ -1,25 +1,25 @@
 {
   "version": "1.0",
   "project": {
-    "totalFocusTime": 5859194,
-    "totalActiveTime": 750518
+    "totalFocusTime": 9182062,
+    "totalActiveTime": 1207366
   },
   "files": {
     "index.js": {
-      "pending": 571072,
-      "focus": 2080196
+      "pending": 768015,
+      "focus": 2945108
     },
     "server.js": {
-      "pending": 161377,
-      "focus": 518213
+      "pending": 418581,
+      "focus": 1331590
     },
     "package.json": {
       "pending": 15912,
-      "focus": 38190
+      "focus": 52026
     },
     "README.md": {
-      "pending": 2157,
-      "focus": 186014
+      "pending": 4858,
+      "focus": 317131
     }
   }
 }
