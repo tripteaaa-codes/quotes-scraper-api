@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "project": {
-    "totalFocusTime": 11405182,
-    "totalActiveTime": 1835101
+    "totalFocusTime": 13498868,
+    "totalActiveTime": 2318536
   },
   "files": {
     "index.js": {
@@ -10,12 +10,12 @@
       "focus": 2949447
     },
     "server.js": {
-      "pending": 634209,
-      "focus": 2163912
+      "pending": 826219,
+      "focus": 2946351
     },
     "package.json": {
-      "pending": 15912,
-      "focus": 52026
+      "pending": 16422,
+      "focus": 86876
     },
     "README.md": {
       "pending": 4858,
@@ -23,11 +23,23 @@
     },
     "books.js": {
       "pending": 246444,
-      "focus": 957505
+      "focus": 959248
     },
     "analyze.js": {
       "pending": 165663,
-      "focus": 296690
+      "focus": 315196
+    },
+    ".env": {
+      "pending": 2403,
+      "focus": 56071
+    },
+    "models/Book.js": {
+      "pending": 71613,
+      "focus": 193532
+    },
+    "importBooks.js": {
+      "pending": 216899,
+      "focus": 387446
     }
   }
 }
