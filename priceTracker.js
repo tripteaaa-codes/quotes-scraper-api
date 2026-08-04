@@ -49,6 +49,7 @@ const fs = require('fs');
     });
 
     const data = {
+        search: 'laptop',
         searchedAt: new Date().toISOString(),
         totalProducts: products.length,
         products
@@ -60,7 +61,7 @@ const fs = require('fs');
         'utf8'
     );
 
-    console.log('\nData saved to laptops.json');
+    console.log('\nData saved to laptop.json');
 
     await browser.close();
 

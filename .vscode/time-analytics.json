@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "project": {
-    "totalFocusTime": 21929795,
-    "totalActiveTime": 3773428
+    "totalFocusTime": 24008642,
+    "totalActiveTime": 4109070
   },
   "files": {
     "index.js": {
@@ -11,7 +11,7 @@
     },
     "server.js": {
       "pending": 952527,
-      "focus": 3539207
+      "focus": 3540360
     },
     "package.json": {
       "pending": 16928,
@@ -19,7 +19,7 @@
     },
     "README.md": {
       "pending": 7764,
-      "focus": 331059
+      "focus": 379881
     },
     "books.js": {
       "pending": 246444,
@@ -50,8 +50,20 @@
       "focus": 1431914
     },
     "priceTracker.js": {
-      "pending": 537564,
-      "focus": 1421979
+      "pending": 553294,
+      "focus": 1561013
+    },
+    "laptop.json": {
+      "pending": 803,
+      "focus": 122556
+    },
+    "comparePrices.js": {
+      "pending": 319109,
+      "focus": 952643
+    },
+    "books.json": {
+      "pending": 0,
+      "focus": 11785
     }
   }
 }
