@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "project": {
-    "totalFocusTime": 24008642,
-    "totalActiveTime": 4109070
+    "totalFocusTime": 27387600,
+    "totalActiveTime": 5166186
   },
   "files": {
     "index.js": {
@@ -18,8 +18,8 @@
       "focus": 121934
     },
     "README.md": {
-      "pending": 7764,
-      "focus": 379881
+      "pending": 11479,
+      "focus": 414492
     },
     "books.js": {
       "pending": 246444,
@@ -59,11 +59,15 @@
     },
     "comparePrices.js": {
       "pending": 319109,
-      "focus": 952643
+      "focus": 1037315
     },
     "books.json": {
       "pending": 0,
       "focus": 11785
+    },
+    "jewelryTracker.js": {
+      "pending": 1053401,
+      "focus": 2323875
     }
   }
 }

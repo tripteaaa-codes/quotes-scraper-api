@@ -42,3 +42,29 @@ containing the latest scraped laptop prices.
 
 ---
 
+# Amazon Jewelry Feature Extractor
+
+A Node.js + Playwright project that dynamically scrapes Amazon jewelry listings and extracts structured product features.
+
+## Extracted Features
+
+- Price
+- Rating
+- Jewelry Type
+- Metal Type
+- Gemstone Type
+- Brand Name
+
+## Tech Stack
+
+- Node.js
+- Playwright
+- JavaScript
+- Regular Expressions
+- JSON
+
+## Run
+
+```bash
+npm install
+node jewelryTracker.js
