@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "project": {
-    "totalFocusTime": 13498868,
-    "totalActiveTime": 2318536
+    "totalFocusTime": 14469182,
+    "totalActiveTime": 2444844
   },
   "files": {
     "index.js": {
@@ -10,8 +10,8 @@
       "focus": 2949447
     },
     "server.js": {
-      "pending": 826219,
-      "focus": 2946351
+      "pending": 952527,
+      "focus": 3417296
     },
     "package.json": {
       "pending": 16422,
@@ -31,7 +31,7 @@
     },
     ".env": {
       "pending": 2403,
-      "focus": 56071
+      "focus": 117681
     },
     "models/Book.js": {
       "pending": 71613,

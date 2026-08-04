@@ -35,6 +35,22 @@ app.get('/books/search', async (req, res) => {
     res.json(books);
 });
 
+app.get('/books/stats', async (req, res) => {
+    const books = await Book.find();
+
+    const prices = books.map(book => book.price);
+
+    const average = 
+        prices.reduce((sum, price) => sum + price, 0) / prices.length;
+
+    res.json({
+        totalBooks: books.length,
+        cheapest: Math.min(...prices),
+        mostExpensive: Math.max(...prices),
+        averagePrice: Number(average.toFixed(2))
+    });
+});
+
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on PORT ${process.env.PORT}`);
 });
