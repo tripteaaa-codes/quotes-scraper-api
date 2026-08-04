@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "project": {
-    "totalFocusTime": 21675647,
-    "totalActiveTime": 3737953
+    "totalFocusTime": 21929795,
+    "totalActiveTime": 3773428
   },
   "files": {
     "index.js": {
@@ -18,8 +18,8 @@
       "focus": 121934
     },
     "README.md": {
-      "pending": 4858,
-      "focus": 317131
+      "pending": 7764,
+      "focus": 331059
     },
     "books.js": {
       "pending": 246444,
@@ -50,8 +50,8 @@
       "focus": 1431914
     },
     "priceTracker.js": {
-      "pending": 504995,
-      "focus": 1279986
+      "pending": 537564,
+      "focus": 1421979
     }
   }
 }

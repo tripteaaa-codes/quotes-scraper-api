@@ -48,6 +48,12 @@ const fs = require('fs');
         console.log('---------------------------');
     });
 
+    const data = {
+        searchedAt: new Date().toISOString(),
+        totalProducts: products.length,
+        products
+    };
+
     fs.writeFileSync(
         'laptop.json',
         JSON.stringify(products, null, 2),

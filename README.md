@@ -1,57 +1,44 @@
-# Quotes Scraper API
+# Amazon Laptop Price Tracker
 
-A simple web scraping project built with **Node.js**, **Express**, **Axios**, and **Cheerio**.
+A dynamic web scraping project built with **Node.js** and **Playwright**.
 
 ## Features
 
-- Scrapes quotes from `https://quotes.toscrape.com`
-- Extracts quote text and author names
-- Saves data to `quotes.json`
-- Serves the scraped data through a REST API
+- Opens Amazon India automatically
+- Searches for laptops
+- Extracts product titles and prices
+- Saves results to `laptops.json`
+- Uses real Chrome browser automation
 
 ## Tech Stack
 
 - Node.js
-- Express
-- Axios
-- Cheerio
+- Playwright
+- JavaScript
+- JSON
 
 ## Installation
 
 ```bash
 npm install
+npx playwright install
 ```
 
-## Run the Scraper
+## Run
 
 ```bash
-node index.js
+node priceTracker.js
 ```
 
-This creates `quotes.json`.
+## Output
 
-## Start the API
-
-```bash
-node server.js
-```
-
-Server runs at:
+The script generates:
 
 ```txt
-http://localhost:3000
+laptops.json
 ```
 
-## API Endpoint
+containing the latest scraped laptop prices.
 
-### Get all quotes
+---
 
-```http
-GET /quotes
-```
-
-Example:
-
-```txt
-http://localhost:3000/quotes
-```
