@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "project": {
-    "totalFocusTime": 14469182,
-    "totalActiveTime": 2444844
+    "totalFocusTime": 17041632,
+    "totalActiveTime": 2934158
   },
   "files": {
     "index.js": {
@@ -11,11 +11,11 @@
     },
     "server.js": {
       "pending": 952527,
-      "focus": 3417296
+      "focus": 3539207
     },
     "package.json": {
-      "pending": 16422,
-      "focus": 86876
+      "pending": 16928,
+      "focus": 121934
     },
     "README.md": {
       "pending": 4858,
@@ -40,6 +40,14 @@
     "importBooks.js": {
       "pending": 216899,
       "focus": 387446
+    },
+    "dynamic.js": {
+      "pending": 258804,
+      "focus": 834043
+    },
+    "amazon.js": {
+      "pending": 230004,
+      "focus": 371527
     }
   }
 }
