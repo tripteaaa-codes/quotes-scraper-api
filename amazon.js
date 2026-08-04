@@ -1,27 +1,61 @@
-const { chromium } = require('playwright');
+// const { chromium } = require('playwright');
 
-(async () => {
+// (async () => {
+//     const browser = await chromium.launch({
+//         headless: false,
+//         executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
+//     });
+
+//     const page = await browser.newPage();
+
+//     await page.goto('https://www.amazon.in');
+
+//     await page.fill('#twotabsearchtextbox', 'laptop');
+
+//     await page.waitForTimeout(3000);
+
+//     const title = await page.$$eval(
+//         'h2 span',
+//         elements => elements.slice(0, 5).map(el => el.innerText)
+//     );
+
+//     console.log('Top 5 result:\n');
+
+//     title.forEach((title, index) =>{
+//         console.log(`${index + 1}. ${title}`);
+//     });
+
+//     await browser.close();
+// })();
+
+
+const { chromium } = require('playwright');
+const readline = require('readline');
+
+(async() => {
     const browser = await chromium.launch({
         headless: false,
         executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
     });
-
+ 
     const page = await browser.newPage();
 
     await page.goto('https://www.amazon.in');
 
-    await page.fill('#twotabsearchtextbox', 'laptop');
+    await page.fill('#twotabsearchtextbox', 'earing');
+
+    await page.click('#nav-search-submit-button');
 
     await page.waitForTimeout(3000);
 
-    const title = await page.$$eval(
+    const titles = await page.$$eval(
         'h2 span',
         elements => elements.slice(0, 5).map(el => el.innerText)
     );
 
-    console.log('Top 5 result:\n');
+    console.log('Top 5 results:\n');
 
-    title.forEach((title, index) =>{
+    titles.forEach((title, index) => {
         console.log(`${index + 1}. ${title}`);
     });
 

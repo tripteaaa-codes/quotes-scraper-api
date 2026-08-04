@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "project": {
-    "totalFocusTime": 17041632,
-    "totalActiveTime": 2934158
+    "totalFocusTime": 21675647,
+    "totalActiveTime": 3737953
   },
   "files": {
     "index.js": {
@@ -46,8 +46,12 @@
       "focus": 834043
     },
     "amazon.js": {
-      "pending": 230004,
-      "focus": 371527
+      "pending": 528804,
+      "focus": 1431914
+    },
+    "priceTracker.js": {
+      "pending": 504995,
+      "focus": 1279986
     }
   }
 }
